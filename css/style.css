@@ -1,0 +1,242 @@
+body {
+  padding: 0;
+  margin: 0;
+  /* background-color: black; */
+  /* background-color: blue; */
+}
+
+/* navigation bar and logo image */
+#logo {
+  padding: 2px 10px;
+}
+#logo img {
+  height: 48px;
+  /* margin: 0px 10px; */
+}
+
+/* list items in navbar */
+#navbar {
+  display: flex;
+  /* border: 2px solid black; */
+  /* margin:30px; */
+  /* flex-direction: row-reverse; */
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+
+  top: 0px;
+  left: 0px;
+  /* position:absolute; */
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+#navbar ul {
+  display: flex;
+  /* flex-direction:row-reverse; */
+}
+#navbar ul li {
+  list-style: none;
+  font-size: 1.2rem;
+}
+#navbar ul li a {
+  color: blanchedalmond;
+  display: block;
+  font-family: 'Roboto Condensed', sans-serif;
+  border-radius: 15px;
+  padding: 2px 25px;
+  text-decoration: none;
+}
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+/* Home section  */
+#home {
+  color: #0c0c06;
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  padding: 51px 20px;
+  height: 360px;
+  justify-content: center;
+  align-items: center;
+}
+#home::before {
+  content: "";
+  position: absolute;
+  background: url("../img/bg1.jpg") no-repeat center center/cover;
+  height:460px;
+  width: 100%;
+  z-index: -2;
+  opacity: 0.89;
+}
+#home h1 {
+  color: rgb(12, 9, 9);
+  text-align: center;
+  /* font-family: 'Dancing Script', cursive; */
+  font-family: "Kaushan Script", cursive;
+}
+#home p {
+  background-color: rgba(109, 180, 197, 0.3);
+  color: white;
+  text-align: center;
+  text-align: center;
+  font-size: 19px;
+  color: rgb(0, 0, 0);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  margin-top: 20px;
+}
+/* utility classes */
+.hprimary {
+  font-size: 3rem;
+  padding: 15px;
+  font-family: "Kaushan Script", cursive;
+}
+.hsecondary {
+  font-size: 2.3rem;
+  padding: 15px;
+}
+.center {
+  text-align: center;
+  justify-content: center;
+}
+.btn {
+  padding: 6px 40px;
+  border: 2px solid rgb(8, 49, 77);
+  background-color: burlywood;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: "Alegreya", serif;
+  font-size: 15px;
+  text-align: center;
+}
+.btn:hover {
+  background-color: rgb(161, 84, 84);
+}
+
+/* center section */
+#services {
+  display: flex;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+/* #services::before{
+  content: "";
+  position: absolute;
+  background: url("../img/bg2.jpg") no-repeat center center/cover ;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.8;
+} */
+#services .box {
+  border: 2px solid green;
+  padding: 20px;
+  margin: 5px 5px;
+  /* height: 450px; */
+  width: 600px;
+  border-radius: 28px;
+ background-color: rgb(211 218 218 / 30%)
+}
+/* .servicecontainer{
+  margin-top:10px ;
+
+  margin-bottom:10px ;
+} */
+#services .box img {
+  height: 190px;
+  display: block;
+  margin: auto;
+}
+
+
+/* client section  */
+#clientsection{
+  position: relative;
+/* height: 340px; */
+}
+
+#clientsection::before{
+  content: "";
+  position: absolute;
+  background: url("../img/bg5jpg.jpg") no-repeat center ;
+  width: 100%;
+  margin-top: 10px;
+
+  height: 100%;
+  z-index: -1;
+  opacity: 0.77;
+}
+
+
+#clients {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 20px  ;
+}
+#clients img{
+  height: 100px;
+}
+.clientitem{
+  padding: 40px;
+}
+
+/* contact section  */
+#contact{
+  position: relative;
+}
+#contactbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+#contactbox input,textarea{
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 20px;
+  font-size: 1.1rem;
+}
+#contactbox form{
+width: 50%;
+}
+#contactbox form label{
+  font-size: 1.3rem;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+#contact::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.78;
+  background: url("../img/bg2.jpg") no-repeat center center/cover;
+}
+
+/* footer */
+footer{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 9px 20px;
+
+}
+.formgroup .btn{
+  width: 120px;
+  display:block;
+  margin: auto;
+}
+.formgroup .btn:hover{
+  background-color: black;
+  color: white;
+}
